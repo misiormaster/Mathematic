@@ -88,7 +88,7 @@ public class UiDivision extends JFrame {
 		txtResult.cut();
 		txtResult.setBackground(Color.WHITE);
 
-		btnEnter = new JButton("enter");
+		btnEnter = new JButton("sprawdz wynik");
 		btnEnter.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				logic.checkResultDivision();

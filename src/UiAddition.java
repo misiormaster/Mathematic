@@ -91,7 +91,7 @@ public class UiAddition extends JFrame {
 		
 		
 
-		btnEnter = new JButton("enter");
+		btnEnter = new JButton("sprawdz wynik");
 		btnEnter.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				logic.checkResultAddition();

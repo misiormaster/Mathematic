@@ -88,7 +88,7 @@ public class UiMulti extends JFrame {
 		txtResult.cut();
 		txtResult.setBackground(Color.WHITE);
 
-		btnEnter = new JButton("enter");
+		btnEnter = new JButton("sprawdz wynik");
 		btnEnter.setBounds(110, 537, 230, 55);
 		btnEnter.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
