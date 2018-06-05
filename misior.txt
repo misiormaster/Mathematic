@@ -1,0 +1,13 @@
+"Krzysztof"+" "+"Misiejko"
+"Krzysztof"+" "+"Misiejko"
+"Krzysztof"+" "+"Misiejko"
+int x=42;
+x*2
+x
+x=x+7
+x
+double metry = 1.83;
+double centymetry = metry * 100;
+String mojeImieNazwisko = "Krzysztof Misiejko";
+mojeImieNazwisko + ", Doktor"
+System.out.println(x)
