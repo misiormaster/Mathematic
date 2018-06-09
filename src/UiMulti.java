@@ -165,6 +165,12 @@ public class UiMulti extends JFrame {
 		lblPoints.setEnabled(true);
 		lblPoints.setBounds(639, 550, 15, 35);
 		getContentPane().add(lblPoints);
+		
+		JLabel label = new JLabel("/20");
+		label.setHorizontalAlignment(SwingConstants.LEFT);
+		label.setFont(new Font("Tahoma", Font.BOLD, 20));
+		label.setBounds(462, 154, 47, 40);
+		getContentPane().add(label);
 		lblPoints.setVisible(false);
 
 		logic.btnChoise_1Action();
