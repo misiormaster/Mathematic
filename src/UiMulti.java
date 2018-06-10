@@ -132,6 +132,7 @@ public class UiMulti extends JFrame {
 				txtResult.setBackground(Color.WHITE);
 				logic.MultiNumberOfTryes();
 				logic.MultiGameSummary();
+				
 			}
 		});
 		btnNext.setForeground(Color.GREEN);
@@ -189,5 +190,6 @@ public class UiMulti extends JFrame {
 		lblPoints.setVisible(false);
 
 		logic.btnChoise_1Action();
+		logic.btnChoise_testAction();
 	}
 }

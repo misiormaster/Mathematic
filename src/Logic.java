@@ -5,6 +5,7 @@ public class Logic {
 	private int number = 0;
 	private int number2 = 0;
 	int goodAnswer = 0;
+	ListOfRepetitions list = new ListOfRepetitions();
 	
 
 
@@ -189,6 +190,7 @@ public class Logic {
 			counterText = Integer.toString(counter);
 			this.multi.lblExampleNumb.setText(counterText);
 			btnChoise_1Action();
+			btnChoise_testAction();
 		}
 	}
 	public void MultiGameSummary() {
@@ -336,7 +338,7 @@ public class Logic {
 
 
 
-	public void btnChoise_testAction() {
+	public void btnChoise_1Action() {
 		String message = " Wpisz prawidłowy wynik i wciścnij 'enter'.";
 		this.multi.lblComments.setText(message);
 
@@ -386,17 +388,18 @@ public class Logic {
 		this.subtraction.lblValue2.setText(txtNumb2);
 	}
 	
-	public void btnChoise_1Action() {
-		String message = " Wpisz prawidłowy wynik i wciścnij 'enter'.";
-		this.multi.lblComments.setText(message);
+	public void btnChoise_testAction() {
+		/*String message = " Wpisz prawidłowy wynik i wciścnij 'enter'.";
+		this.multi.lblComments.setText(message);*/
 		
-		number = getValue1RandomNumber();
+		//number = getValue1RandomNumber();
 		String txtNumb = String.valueOf(number);
-		this.multi.lblValue1.setText(txtNumb);
-		number2 = getValue2RandomNumber();
+		//this.multi.lblValue1.setText(txtNumb);
+		//number2 = getValue2RandomNumber();
 		String txtNumb2 = String.valueOf(number2);
-		this.multi.lblValue2.setText(txtNumb2);
-		ListOfRepetitions list = new ListOfRepetitions();
+		//this.multi.lblValue2.setText(txtNumb2);
+		
+		//ListOfRepetitions list = new ListOfRepetitions();
 		list.listOfRep.add(txtNumb+txtNumb2);
 		String listNumber = list.listOfRep.get(0);
 		multi.lblTest.setText(listNumber);
@@ -404,5 +407,6 @@ public class Logic {
 		String sizeTxt = String.valueOf(size);
 		multi.lblTestSize.setText(sizeTxt);
 		}
+	
 
 }
