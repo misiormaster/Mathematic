@@ -190,7 +190,7 @@ public class Logic {
 			counterText = Integer.toString(counter);
 			this.multi.lblExampleNumb.setText(counterText);
 			btnChoise_1Action();
-			btnChoise_testAction();
+			setNumbersToList();
 		}
 	}
 	public void MultiGameSummary() {
@@ -388,18 +388,10 @@ public class Logic {
 		this.subtraction.lblValue2.setText(txtNumb2);
 	}
 	
-	public void btnChoise_testAction() {
-		/*String message = " Wpisz prawidłowy wynik i wciścnij 'enter'.";
-		this.multi.lblComments.setText(message);*/
+	public void setNumbersToList() {
 		
-		//number = getValue1RandomNumber();
 		String txtNumb = String.valueOf(number);
-		//this.multi.lblValue1.setText(txtNumb);
-		//number2 = getValue2RandomNumber();
 		String txtNumb2 = String.valueOf(number2);
-		//this.multi.lblValue2.setText(txtNumb2);
-		
-		//ListOfRepetitions list = new ListOfRepetitions();
 		list.listOfRep.add(txtNumb+txtNumb2);
 		String listNumber = list.listOfRep.get(0);
 		multi.lblTest.setText(listNumber);

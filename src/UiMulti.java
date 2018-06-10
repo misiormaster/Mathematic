@@ -190,6 +190,6 @@ public class UiMulti extends JFrame {
 		lblPoints.setVisible(false);
 
 		logic.btnChoise_1Action();
-		logic.btnChoise_testAction();
+		logic.setNumbersToList();
 	}
 }
