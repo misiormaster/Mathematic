@@ -24,6 +24,9 @@ public class UiMulti extends JFrame {
 	public JLabel lblExample;
 	public JLabel lblExampleNumb;
 	public JLabel lblPoints;
+	public JLabel lblTest;
+	public JLabel lblTestSize;
+
 	
 
 	public UiMulti() {
@@ -171,6 +174,18 @@ public class UiMulti extends JFrame {
 		lblMaxExplAmount.setFont(new Font("Tahoma", Font.BOLD, 20));
 		lblMaxExplAmount.setBounds(462, 154, 47, 40);
 		getContentPane().add(lblMaxExplAmount);
+		
+		lblTest = new JLabel("");
+		lblTest.setHorizontalAlignment(SwingConstants.LEFT);
+		lblTest.setFont(new Font("Tahoma", Font.BOLD, 20));
+		lblTest.setBounds(575, 423, 78, 40);
+		getContentPane().add(lblTest);
+		
+		lblTestSize = new JLabel("");
+		lblTestSize.setHorizontalAlignment(SwingConstants.LEFT);
+		lblTestSize.setFont(new Font("Tahoma", Font.BOLD, 20));
+		lblTestSize.setBounds(98, 423, 78, 40);
+		getContentPane().add(lblTestSize);
 		lblPoints.setVisible(false);
 
 		logic.btnChoise_1Action();

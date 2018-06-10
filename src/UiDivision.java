@@ -149,7 +149,7 @@ public class UiDivision extends JFrame {
 		getContentPane().add(txtInstructions);
 		
 		lblExample = new JLabel("Przykład nr: ");
-		lblExample.setHorizontalAlignment(SwingConstants.RIGHT);
+		lblExample.setHorizontalAlignment(SwingConstants.CENTER);
 		lblExample.setFont(new Font("Tahoma", Font.BOLD, 20));
 		lblExample.setBounds(281, 154, 150, 40);
 		getContentPane().add(lblExample);

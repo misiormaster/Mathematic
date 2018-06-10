@@ -336,7 +336,7 @@ public class Logic {
 
 
 
-	public void btnChoise_1Action() {
+	public void btnChoise_testAction() {
 		String message = " Wpisz prawidłowy wynik i wciścnij 'enter'.";
 		this.multi.lblComments.setText(message);
 
@@ -347,6 +347,7 @@ public class Logic {
 		number2 = getValue2RandomNumber();
 		String txtNumb2 = String.valueOf(number2);
 		this.multi.lblValue2.setText(txtNumb2);
+		
 	}
 	public void btnChoise_2Action() {
 		String message = " Wpisz prawidłowy wynik i wciścnij 'enter'.";
@@ -384,5 +385,24 @@ public class Logic {
 		String txtNumb2 = String.valueOf(number2);
 		this.subtraction.lblValue2.setText(txtNumb2);
 	}
+	
+	public void btnChoise_1Action() {
+		String message = " Wpisz prawidłowy wynik i wciścnij 'enter'.";
+		this.multi.lblComments.setText(message);
+		
+		number = getValue1RandomNumber();
+		String txtNumb = String.valueOf(number);
+		this.multi.lblValue1.setText(txtNumb);
+		number2 = getValue2RandomNumber();
+		String txtNumb2 = String.valueOf(number2);
+		this.multi.lblValue2.setText(txtNumb2);
+		ListOfRepetitions list = new ListOfRepetitions();
+		list.listOfRep.add(txtNumb+txtNumb2);
+		String listNumber = list.listOfRep.get(0);
+		multi.lblTest.setText(listNumber);
+		int size = list.listOfRep.size();
+		String sizeTxt = String.valueOf(size);
+		multi.lblTestSize.setText(sizeTxt);
+		}
 
 }
