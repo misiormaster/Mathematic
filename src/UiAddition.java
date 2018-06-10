@@ -131,8 +131,8 @@ public class UiAddition extends JFrame {
 				txtResult.selectAll();
 				txtResult.cut();
 				txtResult.setBackground(Color.WHITE);
-				logic.AddNumberOfTryes();
-				logic.AddGameSummary();
+				logic.addNumberOfTryes();
+				logic.addGameSummary();
 			}
 		});
 		btnNext.setForeground(Color.GREEN);

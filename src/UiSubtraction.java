@@ -129,8 +129,8 @@ public class UiSubtraction extends JFrame {
 				txtResult.selectAll();
 				txtResult.cut();
 				txtResult.setBackground(Color.WHITE);
-				logic.SubNumberOfTryes();
-				logic.ASubGameSummary();
+				logic.subNumberOfTryes();
+				logic.subGameSummary();
 			}
 		});
 		btnNext.setForeground(Color.GREEN);

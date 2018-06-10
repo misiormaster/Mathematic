@@ -126,8 +126,8 @@ public class UiDivision extends JFrame {
 				txtResult.selectAll();
 				txtResult.cut();
 				txtResult.setBackground(Color.WHITE);
-				logic.DiviNumberOfTryes();
-				logic.DiviGameSummary();
+				logic.diviNumberOfTryes();
+				logic.diviGameSummary();
 			}
 		});
 		btnNext.setForeground(Color.GREEN);

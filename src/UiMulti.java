@@ -130,8 +130,8 @@ public class UiMulti extends JFrame {
 				txtResult.selectAll();
 				txtResult.cut();
 				txtResult.setBackground(Color.WHITE);
-				logic.MultiNumberOfTryes();
-				logic.MultiGameSummary();
+				logic.multiNumberOfTryes();
+				logic.multiGameSummary();
 				
 			}
 		});

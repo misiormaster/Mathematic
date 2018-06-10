@@ -68,7 +68,7 @@ public class Logic {
 			if(userResult == goodResult) {
 				message = " Brawo!!! Wprowadzony wynik jest poprawny. ";
 				this.multi.txtResult.setBackground(Color.GREEN);
-				MultiPointsSummary();
+				multiPointsSummary();
 			}else {
 				message = " Żle!!! Prawidłowy wynik to " + goodResult;
 				this.multi.txtResult.setBackground(Color.RED);
@@ -90,7 +90,7 @@ public class Logic {
 			if(userResult == goodResult) {
 				message = " Brawo!!! Wprowadzony wynik jest poprawny. ";
 				this.division.txtResult.setBackground(Color.GREEN);
-				DiviPointsSummary();
+				diviPointsSummary();
 			}else {
 				message = " Żle!!! Prawidłowy wynik to " + goodResult;
 				this.division.txtResult.setBackground(Color.RED);
@@ -112,7 +112,7 @@ public class Logic {
 			if(userResult == goodResult) {
 				message = " Brawo!!! Wprowadzony wynik jest poprawny. ";
 				this.addition.txtResult.setBackground(Color.GREEN);
-				AddPointsSummary();
+				addPointsSummary();
 			}else {
 				message = " Żle!!! Prawidłowy wynik to " + goodResult;
 				this.addition.txtResult.setBackground(Color.RED);
@@ -134,7 +134,7 @@ public class Logic {
 			if(userResult == goodResult) {
 				message = " Brawo!!! Wprowadzony wynik jest poprawny. ";
 				this.subtraction.txtResult.setBackground(Color.GREEN);
-				SubPointsSummary();
+				subPointsSummary();
 			}else {
 				message = " Żle!!! Prawidłowy wynik to " + goodResult;
 				this.subtraction.txtResult.setBackground(Color.RED);
@@ -180,7 +180,7 @@ public class Logic {
 		}while( randomNumber2 > randomNumber1);
 		return randomNumber2;
 	}
-	public void MultiNumberOfTryes() {
+	public void multiNumberOfTryes() {
 		String counterText = this.multi.lblExampleNumb.getText();
 		String message = this.multi.lblComments.getText();
 		int counter = Integer.parseInt(counterText);
@@ -193,7 +193,7 @@ public class Logic {
 			setNumbersToTheList();
 		}
 	}
-	public void MultiGameSummary() {
+	public void multiGameSummary() {
 		String finalExample = this.multi.lblExampleNumb.getText();
 		int number = Integer.parseInt(finalExample);
 		if( number > 20 ) {
@@ -206,7 +206,7 @@ public class Logic {
 			gameSummary.lblUserPoints.setText(pointsSum);	
 		}
 	}
-	public void MultiPointsSummary() {
+	public void multiPointsSummary() {
 		String goodMessage = " Brawo!!! Wprowadzony wynik jest poprawny. ";
 		String message = this.multi.lblComments.getText();
 		String counterMessage = this.multi.lblPoints.getText();
@@ -219,7 +219,7 @@ public class Logic {
 		this.multi.lblPoints.setText(text);	
 	}
 	
-	public void DiviNumberOfTryes() {
+	public void diviNumberOfTryes() {
 		String counterText = this.division.lblExampleNumb.getText();
 		String message = this.division.lblComments.getText();
 		int counter = Integer.parseInt(counterText);
@@ -232,7 +232,7 @@ public class Logic {
 		}
 
 	}
-	public void DiviGameSummary() {
+	public void diviGameSummary() {
 		String finalExample = this.division.lblExampleNumb.getText();
 		int number = Integer.parseInt(finalExample);
 		if( number > 20 ) {
@@ -245,7 +245,7 @@ public class Logic {
 			gameSummary.lblUserPoints.setText(pointsSum);	
 		}
 	}
-	public void DiviPointsSummary() {
+	public void diviPointsSummary() {
 		String goodMessage = " Brawo!!! Wprowadzony wynik jest poprawny. ";
 		String message = this.division.lblComments.getText();
 		String counterMessage = this.division.lblPoints.getText();
@@ -258,7 +258,7 @@ public class Logic {
 		this.division.lblPoints.setText(text);	
 	}
 	
-	public void AddNumberOfTryes() {
+	public void addNumberOfTryes() {
 		String counterText = this.addition.lblExampleNumb.getText();
 		String message = this.addition.lblComments.getText();
 		int counter = Integer.parseInt(counterText);
@@ -271,7 +271,7 @@ public class Logic {
 		}
 
 	}
-	public void AddGameSummary() {
+	public void addGameSummary() {
 		String finalExample = this.addition.lblExampleNumb.getText();
 		int number = Integer.parseInt(finalExample);
 		if( number > 20 ) {
@@ -284,7 +284,7 @@ public class Logic {
 			gameSummary.lblUserPoints.setText(pointsSum);	
 		}
 	}
-	public void AddPointsSummary() {
+	public void addPointsSummary() {
 		String goodMessage = " Brawo!!! Wprowadzony wynik jest poprawny. ";
 		String message = this.addition.lblComments.getText();
 		String counterMessage = this.addition.lblPoints.getText();
@@ -297,7 +297,7 @@ public class Logic {
 		this.addition.lblPoints.setText(text);	
 	}
 	
-	public void SubNumberOfTryes() {
+	public void subNumberOfTryes() {
 		String counterText = this.subtraction.lblExampleNumb.getText();
 		String message = this.subtraction.lblComments.getText();
 		int counter = Integer.parseInt(counterText);
@@ -310,7 +310,7 @@ public class Logic {
 		}
 
 	}
-	public void ASubGameSummary() {
+	public void subGameSummary() {
 		String finalExample = this.subtraction.lblExampleNumb.getText();
 		int number = Integer.parseInt(finalExample);
 		if( number > 20 ) {
@@ -323,7 +323,7 @@ public class Logic {
 			gameSummary.lblUserPoints.setText(pointsSum);	
 		}
 	}
-	public void SubPointsSummary() {
+	public void subPointsSummary() {
 		String goodMessage = " Brawo!!! Wprowadzony wynik jest poprawny. ";
 		String message = this.subtraction.lblComments.getText();
 		String counterMessage = this.subtraction.lblPoints.getText();
