@@ -166,6 +166,13 @@ public class UiDivision extends JFrame {
 		lblPoints.setBounds(639, 550, 15, 35);
 		getContentPane().add(lblPoints);
 		lblPoints.setVisible(false);
+		
+		JLabel lblMaxExplAmount = new JLabel("/20");
+		lblMaxExplAmount.setHorizontalAlignment(SwingConstants.LEFT);
+		lblMaxExplAmount.setFont(new Font("Tahoma", Font.BOLD, 20));
+		lblMaxExplAmount.setBounds(462, 154, 47, 40);
+		getContentPane().add(lblMaxExplAmount);
+		lblPoints.setVisible(false);
 
 		logic.btnChoise_2Action();
 	}

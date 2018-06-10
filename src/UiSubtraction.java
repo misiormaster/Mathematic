@@ -169,7 +169,7 @@ public class UiSubtraction extends JFrame {
 		getContentPane().add(txtInstructions);
 		
 		lblExample = new JLabel("Przykład nr: ");
-		lblExample.setHorizontalAlignment(SwingConstants.RIGHT);
+		lblExample.setHorizontalAlignment(SwingConstants.CENTER);
 		lblExample.setFont(new Font("Tahoma", Font.BOLD, 20));
 		lblExample.setBounds(281, 154, 150, 40);
 		getContentPane().add(lblExample);
@@ -185,6 +185,13 @@ public class UiSubtraction extends JFrame {
 		lblPoints.setEnabled(true);
 		lblPoints.setBounds(639, 550, 15, 35);
 		getContentPane().add(lblPoints);
+		lblPoints.setVisible(false);
+		
+		JLabel lblMaxExplAmount = new JLabel("/20");
+		lblMaxExplAmount.setHorizontalAlignment(SwingConstants.LEFT);
+		lblMaxExplAmount.setFont(new Font("Tahoma", Font.BOLD, 20));
+		lblMaxExplAmount.setBounds(462, 154, 47, 40);
+		getContentPane().add(lblMaxExplAmount);
 		lblPoints.setVisible(false);
 
 		logic.btnChoise_4Action();
