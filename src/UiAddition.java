@@ -121,7 +121,7 @@ public class UiAddition extends JFrame {
 		btnNext.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 
-				logic.btnChoise_3Action();
+				logic.getAdditionRandomNumbers();
 
 				btnNext.setVisible(false);
 				btnEnter.setVisible(true);
@@ -196,6 +196,6 @@ public class UiAddition extends JFrame {
 		getContentPane().add(lblMaxExplAmount);
 		lblPoints.setVisible(false);
 
-		logic.btnChoise_3Action();
+		logic.getAdditionRandomNumbers();
 	}
 }

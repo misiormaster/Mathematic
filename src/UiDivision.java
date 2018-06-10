@@ -118,7 +118,7 @@ public class UiDivision extends JFrame {
 		btnNext.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 
-				logic.btnChoise_2Action();
+				logic.getDivisionRandomNumbers();
 
 				btnNext.setVisible(false);
 				btnEnter.setVisible(true);
@@ -174,7 +174,7 @@ public class UiDivision extends JFrame {
 		getContentPane().add(lblMaxExplAmount);
 		lblPoints.setVisible(false);
 
-		logic.btnChoise_2Action();
+		logic.getDivisionRandomNumbers();
 	}
 
 

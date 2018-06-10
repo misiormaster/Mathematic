@@ -189,7 +189,7 @@ public class UiMulti extends JFrame {
 		getContentPane().add(lblTestSize);
 		lblPoints.setVisible(false);
 
-		logic.btnChoise_1Action();
-		logic.setNumbersToList();
+		logic.getMultiRandomNumbers();
+		logic.setNumbersToTheList();
 	}
 }

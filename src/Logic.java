@@ -189,8 +189,8 @@ public class Logic {
 			counter = counter + 1;
 			counterText = Integer.toString(counter);
 			this.multi.lblExampleNumb.setText(counterText);
-			btnChoise_1Action();
-			setNumbersToList();
+			getMultiRandomNumbers();
+			setNumbersToTheList();
 		}
 	}
 	public void MultiGameSummary() {
@@ -228,7 +228,7 @@ public class Logic {
 			counter = counter + 1;
 			counterText = Integer.toString(counter);
 			this.division.lblExampleNumb.setText(counterText);
-			btnChoise_2Action();
+			getDivisionRandomNumbers();
 		}
 
 	}
@@ -267,7 +267,7 @@ public class Logic {
 			counter = counter + 1;
 			counterText = Integer.toString(counter);
 			this.addition.lblExampleNumb.setText(counterText);
-			btnChoise_3Action();
+			getAdditionRandomNumbers();
 		}
 
 	}
@@ -306,7 +306,7 @@ public class Logic {
 			counter = counter + 1;
 			counterText = Integer.toString(counter);
 			this.subtraction.lblExampleNumb.setText(counterText);
-			btnChoise_4Action();
+			getSubtrationRandomNumbers();
 		}
 
 	}
@@ -338,7 +338,7 @@ public class Logic {
 
 
 
-	public void btnChoise_1Action() {
+	public void getMultiRandomNumbers() {
 		String message = " Wpisz prawidłowy wynik i wciścnij 'enter'.";
 		this.multi.lblComments.setText(message);
 
@@ -351,7 +351,7 @@ public class Logic {
 		this.multi.lblValue2.setText(txtNumb2);
 		
 	}
-	public void btnChoise_2Action() {
+	public void getDivisionRandomNumbers() {
 		String message = " Wpisz prawidłowy wynik i wciścnij 'enter'.";
 		this.division.lblComments.setText(message);
 
@@ -363,7 +363,7 @@ public class Logic {
 		String txtNumb2 = String.valueOf(number2);
 		this.division.lblValue2.setText(txtNumb2);
 	}
-	public void btnChoise_3Action() {
+	public void getAdditionRandomNumbers() {
 		String message = " Wykonaj obliczenia, wpisz prawidłowy wynik i wciścnij 'enter'.";
 		this.addition.lblComments.setText(message);
 
@@ -375,7 +375,7 @@ public class Logic {
 		String txtNumb2 = String.valueOf(number2);
 		this.addition.lblValue2.setText(txtNumb2);
 	}
-	public void btnChoise_4Action() {
+	public void getSubtrationRandomNumbers() {
 		String message = " Wykonaj obliczenia, wpisz prawidłowy wynik i wciścnij 'enter'.";
 		this.subtraction.lblComments.setText(message);
 
@@ -388,7 +388,7 @@ public class Logic {
 		this.subtraction.lblValue2.setText(txtNumb2);
 	}
 	
-	public void setNumbersToList() {
+	public void setNumbersToTheList() {
 		
 		String txtNumb = String.valueOf(number);
 		String txtNumb2 = String.valueOf(number2);

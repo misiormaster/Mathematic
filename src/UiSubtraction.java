@@ -119,7 +119,7 @@ public class UiSubtraction extends JFrame {
 		btnNext.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 
-				logic.btnChoise_4Action();
+				logic.getSubtrationRandomNumbers();
 
 				btnNext.setVisible(false);
 				btnEnter.setVisible(true);
@@ -194,7 +194,7 @@ public class UiSubtraction extends JFrame {
 		getContentPane().add(lblMaxExplAmount);
 		lblPoints.setVisible(false);
 
-		logic.btnChoise_4Action();
+		logic.getSubtrationRandomNumbers();
 	}
 
 }
